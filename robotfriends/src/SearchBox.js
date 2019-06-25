@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SearchBox = () => {
+const SearchBox = ({searchfield, searchChange}) => {
 
 	return (
 			<div>
@@ -8,6 +8,8 @@ const SearchBox = () => {
 					className='pa3 ba b--green bg-lightest-blue'
 					type='search' 
 					placeholder='search robots' 
+					value={searchfield}
+					onChange={searchChange}
 				/>
 			</div>
 		);
